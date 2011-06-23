@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  AnimatorName: MyString
+  Age: 1
+  salary: 1
+  DOB: 2011-06-23
+  animation: MyText
+
+two:
+  AnimatorName: MyString
+  Age: 1
+  salary: 1
+  DOB: 2011-06-23
+  animation: MyText

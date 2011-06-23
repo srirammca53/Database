@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @animation.name %>
+</p>
+
+<p>
+  <b>Age:</b>
+  <%= @animation.age %>
+</p>
+
+<p>
+  <b>Salary:</b>
+  <%= @animation.salary %>
+</p>
+
+
+<%= link_to 'Edit', edit_animation_path(@animation) %> |
+<%= link_to 'Back', animations_path %>
