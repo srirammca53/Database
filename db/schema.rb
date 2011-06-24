@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110623131425) do
+ActiveRecord::Schema.define(:version => 20110624054933) do
 
   create_table "animations", :force => true do |t|
     t.string   "name"
@@ -28,6 +28,19 @@ ActiveRecord::Schema.define(:version => 20110623131425) do
     t.text     "animation"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "products", :primary_key => "name", :force => true do |t|
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "part_number"
+    t.decimal  "price",       :precision => 10, :scale => 0
+  end
+
+  create_table "test", :id => false, :force => true do |t|
+    t.integer "id",                 :default => 0, :null => false
+    t.string  "name", :limit => 20
   end
 
 end
